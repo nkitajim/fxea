@@ -1,2 +1,7 @@
 requests
 websocket
+torch
+timesfm
+histdata
+yfinance
+pandas

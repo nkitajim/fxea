@@ -45,7 +45,7 @@ class GmoPublicAPI:
 		interval="1min",
 		date=format(datetime.date.today(), "%Y%m%d"),
 	):
-		param = "symbol={symbol}&priceType={priceType}&interval={interval}&date={date}"
+		param = f"symbol={symbol}&priceType={priceType}&interval={interval}&date={date}"
 		jx = self.request_api("GET", f"/public/v1/klines?{param}")
 		return jx
 
